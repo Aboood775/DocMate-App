@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark Theme -->
+    <style name="Base.Theme.DocMate" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/purple_primary</item> <!-- Purple 400 -->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/pink_primary</item> <!-- Accent -->
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background & Surfaces -->
+        <item name="android:windowBackground">@color/background</item> <!-- #301934 -->
+        <item name="colorSurface">@color/surface</item> <!-- #3A2242 -->
+        <item name="colorOnSurface">@color/text_primary</item> <!-- #FFFFFF -->
+        <item name="colorSurfaceVariant">@color/surface</item> <!-- #3A2242 -->
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item> <!-- 70% white -->
+
+        <!-- Active cursors, selections, checkboxes, switches, radio buttons -->
+        <item name="colorControlActivated">@color/docmate_accent</item> <!-- #C77DFF -->
+        <item name="colorOutline">@color/card_stroke</item> <!-- #4A3552 -->
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background</item>
+
+        <!-- Dialogs & Alert Dialogs Styling -->
+        <item name="alertDialogTheme">@style/Theme.DocMate.Dialog</item>
+
+        <!-- Disable force dark because we're providing our own colors -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+
+    <!-- Custom Dialog Theme for Dark Mode -->
+    <style name="Theme.DocMate.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="colorSurface">@color/surface</item> <!-- #3A2242 -->
+        <item name="shapeAppearance">@style/ShapeAppearance.DocMate.Dialog</item>
+    </style>
+
+    <!-- Custom Dialog Shape for Dark Mode: 20dp corners -->
+    <style name="ShapeAppearance.DocMate.Dialog" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+</resources>

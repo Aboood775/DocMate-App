@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all_confirmed">All confirmed!</string>
+    <string name="booking_confirmed_message">Your appointment has been booked. A reminder will be sent 24h before.</string>
+    <string name="date_label">Date</string>
+    <string name="time_label">Time</string>
+    <string name="location_label">Location</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="view_details">View details</string>
+</resources>

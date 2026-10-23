@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Home -->
+    <string name="search_doctors_hint">Search doctors, specialties…</string>
+    <string name="search_icon_description">Search</string>
+    <string name="filter_icon_description">Filter</string>
+    <string name="specialty_all">All</string>
+    <string name="top_rated_doctors">Top rated doctors</string>
+    <string name="no_doctors_found">No doctors found</string>
+    <string name="availability_today">Today</string>
+    <string name="book">Book</string>
+
+    <!-- Doctor Detail -->
+    <string name="back_button_description">Back</string>
+    <string name="tab_about">About</string>
+    <string name="tab_schedule">Schedule</string>
+    <string name="tab_reviews">Reviews</string>
+    <string name="book_appointment">Book appointment</string>
+    <string name="stat_years_experience">Years exp.</string>
+    <string name="stat_rating">Rating</string>
+    <string name="stat_patients">Patients</string>
+
+    <!-- Confirm Booking -->
+    <string name="select_date_time_hint">Select date &amp; time to confirm booking</string>
+    <string name="pick_a_slot">Pick a slot</string>
+    <string name="available_slots">Available slots</string>
+    <string name="confirm_booking">Confirm booking</string>
+    <string name="booking_in_progress">Booking your appointment…</string>
+    <string name="selected_slot_format">Selected: %1$s</string>
+
+</resources>

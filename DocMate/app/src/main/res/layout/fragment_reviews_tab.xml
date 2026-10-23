@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    tools:context=".main.doctordetail.tabs.ReviewsTabFragment">
+
+    <!--
+    ملحوظة: بيانات الـ Reviews الفعلية (نص، تقييم فردي، اسم المريض)
+    مش موجودة لسه في Doctor model أو في أي Repository. التاب ده
+    مبدئيًا بيعرض ملخص بسيط (العدد + المتوسط) من بيانات الدكتور
+    الموجودة فعلاً (reviewCount + rating)، وempty state بسيط.
+    لو الفريق قرر يضيف collection منفصل لـ "reviews" على Firestore،
+    هنحتاج Adapter و RecyclerView هنا بدل التصميم البسيط ده.
+    -->
+
+    <TextView
+        android:id="@+id/tvReviewsSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="4.9 ★ · 248 reviews" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/reviews_coming_soon"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+</LinearLayout>

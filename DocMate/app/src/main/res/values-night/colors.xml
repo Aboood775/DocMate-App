@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================================================= -->
+    <!--                    BRAND COLORS                           -->
+    <!-- ========================================================= -->
+
+    <color name="purple_primary">#9C4DFF</color>
+    <color name="pink_primary">#C77DFF</color>
+
+    <color name="colorPrimary">#9C4DFF</color>
+    <color name="colorPrimaryDark">#8740E8</color>
+    <color name="colorSecondary">#C77DFF</color>
+
+    <color name="primary">#9C4DFF</color>
+    <color name="primary_light">#C77DFF</color>
+
+    <color name="docmate_primary">#9C4DFF</color>
+    <color name="docmate_primary_dark">#8740E8</color>
+    <color name="docmate_accent">#C77DFF</color>
+
+    <color name="docmate_navy">#9C4DFF</color>
+    <color name="docmate_navy_dark">#8740E8</color>
+    <color name="docmate_blue">#9C4DFF</color>
+    <color name="docmate_blue_light">#C77DFF</color>
+
+    <!-- ========================================================= -->
+    <!--                    BACKGROUNDS                            -->
+    <!-- ========================================================= -->
+
+    <color name="background">#1A1028</color>
+    <color name="background_primary">#1A1028</color>
+
+    <color name="background_secondary">#241536</color>
+
+    <color name="colorBackground">#1A1028</color>
+    <color name="colorSurface">#241536</color>
+    <color name="surface">#241536</color>
+
+    <color name="docmate_background">#1A1028</color>
+
+    <!-- ========================================================= -->
+    <!--                     CARDS                                 -->
+    <!-- ========================================================= -->
+
+    <color name="card_background">#2E1C45</color>
+
+
+    <!-- ========================================================= -->
+    <!--                    BUTTONS                                -->
+    <!-- ========================================================= -->
+
+    <color name="button_default">#9C4DFF</color>
+    <color name="button_pressed">#8740E8</color>
+
+    <!-- ========================================================= -->
+    <!--                    TEXT                                   -->
+    <!-- ========================================================= -->
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="docmate_text_primary">#FFFFFF</color>
+
+    <color name="text_secondary">#D6C9F3</color>
+    <color name="colorTextSecondary">#D6C9F3</color>
+    <color name="docmate_text_secondary">#D6C9F3</color>
+
+    <color name="text_hint">#AFA2CB</color>
+    <color name="colorTextHint">#AFA2CB</color>
+    <color name="docmate_placeholder">#AFA2CB</color>
+
+    <color name="text_muted">#7E739C</color>
+
+    <!-- ========================================================= -->
+    <!--                  INPUT FIELDS                             -->
+    <!-- ========================================================= -->
+
+    <color name="docmate_input_background">#35204D</color>
+    <color name="google_btn_background">#35204D</color>
+
+    <color name="input_border_focused">#C77DFF</color>
+
+    <!-- ========================================================= -->
+    <!--                  STROKES / DIVIDERS                       -->
+    <!-- ========================================================= -->
+
+    <color name="card_stroke">#59417B</color>
+    <color name="divider">#45305C</color>
+    <color name="colorDivider">#45305C</color>
+
+    <color name="docmate_border">#59417B</color>
+    <color name="docmate_input_border">#59417B</color>
+
+    <!-- ========================================================= -->
+    <!--                 BOTTOM NAVIGATION                         -->
+    <!-- ========================================================= -->
+
+    <color name="bottom_nav_background">#221333</color>
+
+    <color name="bottom_nav_selected">#B56DFF</color>
+
+    <color name="bottom_nav_unselected">#D6C9F3</color>
+
+    <!-- ========================================================= -->
+    <!--                     INDICATORS                            -->
+    <!-- ========================================================= -->
+
+
+
+    <!-- ========================================================= -->
+    <!--                     BADGES                                -->
+    <!-- ========================================================= -->
+
+    <color name="premium_badge_bg">#C77DFF</color>
+
+    <color name="booking_overlay_background">#B31A1028</color>
+
+    <!-- ========================================================= -->
+    <!--                     STATUS COLORS                         -->
+    <!-- ========================================================= -->
+
+    <color name="status_confirmed_bg">#223A2A</color>
+    <color name="status_confirmed_text">#55D98C</color>
+
+    <color name="colorConfirmedBg">#223A2A</color>
+    <color name="colorSuccess">#55D98C</color>
+
+    <color name="status_pending_bg">#3A2E1C</color>
+    <color name="status_pending_text">#FFC857</color>
+
+    <color name="colorPendingBg">#3A2E1C</color>
+    <color name="colorWarning">#FFC857</color>
+
+    <color name="status_cancelled_bg">#3D1D1D</color>
+    <color name="status_cancelled_text">#FF6B6B</color>
+
+    <color name="colorCancelledBg">#3D1D1D</color>
+    <color name="colorError">#FF6B6B</color>
+
+    <color name="docmate_error">#FF6B6B</color>
+    <color name="docmate_error_background">#3D1D1D</color>
+
+    <!-- ========================================================= -->
+    <!--                    OTHER UI                               -->
+    <!-- ========================================================= -->
+
+    <color name="colorUnreadBg">#372153</color>
+    <color name="colorUnreadStroke">#C77DFF</color>
+
+    <color name="rating_star">#FFC857</color>
+
+    <color name="avatar_bg_1">#9C4DFF</color>
+    <color name="avatar_bg_2">#C77DFF</color>
+
+    <color name="slot_disabled_bg">#241536</color>
+    <color name="slot_disabled_text">#7E739C</color>
+
+    <color name="titan_white">#241536</color>
+
+    <!-- ========================================================= -->
+    <!--                 PROFILE ICONS                             -->
+    <!-- ========================================================= -->
+
+    <color name="profile_icon_bg_personal">#372153</color>
+    <color name="profile_icon_bg_appointments">#223A2A</color>
+    <color name="profile_icon_bg_payment">#3A2E1C</color>
+    <color name="profile_icon_bg_support">#372153</color>
+
+    <color name="profile_icon_personal">#C77DFF</color>
+    <color name="profile_icon_appointments">#55D98C</color>
+    <color name="profile_icon_payment">#FFC857</color>
+    <color name="profile_icon_support">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="working_hours">Working hours</string>
+    <string name="schedule_tab_hint">Tap \"Book appointment\" below to pick an available time slot.</string>
+    <string name="reviews_coming_soon">Detailed patient reviews are coming soon.</string>
+</resources>

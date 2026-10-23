@@ -1,0 +1,35 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background_primary" tools:context=".main.doctordetail.DoctorDetailFragment">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="100dp">
+            <!--  Top bar  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <ImageButton android:id="@+id/btnBack" android:layout_width="32dp" android:layout_height="32dp" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/back_button_description" android:src="@drawable/ic_arrow_back" app:tint="@color/text_primary"/>
+            </LinearLayout>
+            <!--  Doctor header card  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:gravity="center_vertical">
+                <TextView android:id="@+id/tvDoctorInitials" android:layout_width="56dp" android:layout_height="56dp" android:background="@drawable/bg_avatar_circle" android:gravity="center" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" tools:text="AH"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/tvDoctorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_primary" android:textSize="18sp" android:textStyle="bold" tools:text="Dr. Amira Hassan"/>
+                    <TextView android:id="@+id/tvDoctorSpecialty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/docmate_blue" android:textSize="14sp" tools:text="Cardiologist"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center_vertical" android:orientation="horizontal">
+                        <ImageView android:layout_width="14dp" android:layout_height="14dp" android:contentDescription="@null" android:src="@drawable/ic_star_filled"/>
+                        <TextView android:id="@+id/tvDoctorRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:textColor="@color/text_secondary" android:textSize="13sp" tools:text="4.9"/>
+                        <TextView android:id="@+id/tvReviewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:textColor="@color/text_hint" android:textSize="13sp" tools:text="(248)"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--  Stats row  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:orientation="horizontal">
+                <include android:id="@+id/statExperience" layout="@layout/item_doctor_stat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <include android:id="@+id/statRating" layout="@layout/item_doctor_stat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1"/>
+                <include android:id="@+id/statPatients" layout="@layout/item_doctor_stat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1"/>
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayoutDoctorDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@android:color/transparent" app:tabIndicatorColor="@color/docmate_navy" app:tabSelectedTextColor="@color/docmate_navy" app:tabTextColor="@color/text_secondary"/>
+            <!--  Tab content container (swapped programmatically or via ViewPager2)  -->
+            <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewPagerDoctorDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="200dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!--  Sticky bottom button  -->
+    <Button android:id="@+id/btnBookAppointment" style="@style/Widget.DocMate.Button.Primary" android:layout_width="match_parent" android:layout_height="52dp" android:layout_gravity="bottom" android:layout_margin="16dp" android:text="@string/book_appointment"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

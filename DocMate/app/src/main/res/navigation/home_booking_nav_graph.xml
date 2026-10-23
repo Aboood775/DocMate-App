@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_booking_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.docmate.presentation.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_doctor_detail"
+            app:destination="@id/doctorDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/doctorDetailFragment"
+        android:name="com.example.docmate.presentation.main.doctordetail.DoctorDetailFragment"
+        android:label="Doctor Detail"
+        tools:layout="@layout/fragment_doctor_detail">
+
+        <argument
+            android:name="doctorId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_doctor_detail_to_confirm_booking"
+            app:destination="@id/confirmBookingFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmBookingFragment"
+        android:name="com.example.docmate.presentation.main.confirmbooking.ConfirmBookingFragment"
+        android:label="Confirm Booking"
+        tools:layout="@layout/fragment_confirm_booking">
+
+        <argument
+            android:name="doctorId"
+            app:argType="string" />
+
+        <!--
+        ملحوظة: الوجهة "bookedSuccessfullyFragment" دي مش جزء من
+        الـ 3 شاشات بتاعتي مباشرة (هي تقاطع بسيط مع جزء حد تاني/أو
+        شاشة منفصلة)، فهنا بس reference بالـ ID المتوقع. لو الفريق
+        عنده نفس الشاشة في nav graph مختلف، نربطهم وقت الدمج.
+        -->
+        <action
+            android:id="@+id/action_confirm_booking_to_booked_successfully"
+            app:destination="@id/bookedSuccessfullyFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookedSuccessfullyFragment"
+        android:name="com.example.docmate.presentation.main.confirmbooking.BookedSuccessfullyFragment"
+        android:label="Booked Successfully">
+
+        <argument
+            android:name="appointmentId"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.docmate.presentation.main.notification.ui.NotificationFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.example.docmate.presentation.main.booking.ui.BookingFragment"
+        android:label="Booking History"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.docmate.presentation.main.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_personalInfo"
+            app:destination="@id/personalInfoFragment" />
+        <action
+            android:id="@+id/action_profile_to_paymentMethods"
+            app:destination="@id/paymentMethodsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.docmate.presentation.main.profile.PersonalInfoFragment"
+        android:label="Personal Info" />
+
+    <fragment
+        android:id="@+id/paymentMethodsFragment"
+        android:name="com.example.docmate.ui.profile.PaymentMethodsFragment"
+        android:label="Payment Methods" />
+
+</navigation>
